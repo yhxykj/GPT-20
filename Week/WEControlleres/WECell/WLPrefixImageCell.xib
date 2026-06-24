@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="G6b-1z-fGg" customClass="WLPrefixImageCell" customModule="Week" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="G6b-1z-fGg" id="Dlb-ZO-2tJ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="dsl-f1-GaY">
+                        <rect key="frame" x="16" y="21" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28.030000000000001" id="Vqz-G7-9Mm"/>
+                            <constraint firstAttribute="height" constant="28.02" id="gEK-Q9-U8a"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvD-4t-Xqn">
+                        <rect key="frame" x="56" y="12" width="275" height="187"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您的免费3条消息已用完，请解锁VIP无限聊天" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhS-co-Uuy">
+                                <rect key="frame" x="19" y="19.999999999999996" width="236" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNF-Sd-vCy">
+                                <rect key="frame" x="19" y="74" width="237" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="delegate_eModityBegin"/>
+                                <connections>
+                                    <action selector="_enterElevtClick:" destination="G6b-1z-fGg" eventType="touchUpInside" id="pdL-Be-KAm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FpE-W5-yGM">
+                                <rect key="frame" x="19" y="128" width="237" height="42"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="detailsMainbg"/>
+                                <connections>
+                                    <action selector="_freeNumberClick:" destination="G6b-1z-fGg" eventType="touchUpInside" id="CUE-kV-Yuz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.16862745098039217" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FpE-W5-yGM" secondAttribute="bottom" constant="16.989999999999998" id="GHT-0b-xu4"/>
+                            <constraint firstItem="JhS-co-Uuy" firstAttribute="leading" secondItem="lvD-4t-Xqn" secondAttribute="leading" constant="19.02" id="Ijt-gd-jpF"/>
+                            <constraint firstAttribute="bottom" secondItem="RNF-Sd-vCy" secondAttribute="bottom" constant="71.010000000000005" id="JZG-nG-Htd"/>
+                            <constraint firstAttribute="trailing" secondItem="JhS-co-Uuy" secondAttribute="trailing" constant="20.02" id="Jgs-iW-Uin"/>
+                            <constraint firstAttribute="trailing" secondItem="RNF-Sd-vCy" secondAttribute="trailing" constant="18.989999999999998" id="QgC-0P-xDF"/>
+                            <constraint firstItem="RNF-Sd-vCy" firstAttribute="leading" secondItem="lvD-4t-Xqn" secondAttribute="leading" constant="19.010000000000002" id="b1S-aS-ZIh"/>
+                            <constraint firstItem="JhS-co-Uuy" firstAttribute="top" secondItem="lvD-4t-Xqn" secondAttribute="top" constant="19.98" id="fQw-w5-6bk"/>
+                            <constraint firstItem="FpE-W5-yGM" firstAttribute="leading" secondItem="lvD-4t-Xqn" secondAttribute="leading" constant="19.010000000000002" id="hEz-kG-edY"/>
+                            <constraint firstAttribute="height" constant="187.02000000000001" id="ilt-Wu-Qpb"/>
+                            <constraint firstAttribute="trailing" secondItem="FpE-W5-yGM" secondAttribute="trailing" constant="19.02" id="zHZ-tA-lA7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lvD-4t-Xqn" firstAttribute="leading" secondItem="dsl-f1-GaY" secondAttribute="trailing" constant="12.01" id="20g-0v-U4W"/>
+                    <constraint firstAttribute="trailing" secondItem="lvD-4t-Xqn" secondAttribute="trailing" constant="43.969999999999999" id="5Mn-d4-GY9"/>
+                    <constraint firstItem="dsl-f1-GaY" firstAttribute="top" secondItem="Dlb-ZO-2tJ" secondAttribute="top" constant="21.010000000000002" id="Alm-Lg-qMF"/>
+                    <constraint firstItem="lvD-4t-Xqn" firstAttribute="top" secondItem="Dlb-ZO-2tJ" secondAttribute="top" constant="12.01" id="qLu-Xk-m7u"/>
+                    <constraint firstItem="dsl-f1-GaY" firstAttribute="leading" secondItem="Dlb-ZO-2tJ" secondAttribute="leading" constant="15.98" id="wkB-mw-M4J"/>
+                    <constraint firstAttribute="bottom" secondItem="lvD-4t-Xqn" secondAttribute="bottom" constant="11.98" id="yRW-DU-pGo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="pkM-Ik-njF"/>
+            <connections>
+                <outlet property="label" destination="JhS-co-Uuy" id="Zwb-2K-UoJ"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="24.295774647887324"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delegate_eModityBegin" width="251" height="42"/>
+        <image name="detailsMainbg" width="251" height="42"/>
+        <image name="robot" width="28" height="28"/>
+    </resources>
+</document>

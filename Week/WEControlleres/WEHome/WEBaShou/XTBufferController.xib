@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner" customClass="XTBufferController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="6t4-Hg-A7W" id="vKL-Jx-CpH"/>
+                <outlet property="newButton" destination="lIt-yI-ZpV" id="YBz-Ys-rb1"/>
+                <outlet property="titleView" destination="v2S-as-51m" id="qgT-2K-aZe"/>
+                <outlet property="view" destination="EzF-Ph-EFt" id="qnO-gO-ETn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="EzF-Ph-EFt">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settingShowItemun" translatesAutoresizingMaskIntoConstraints="NO" id="H3z-mu-321">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-8m-g86">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v36-61-lsm">
+                            <rect key="frame" x="16" y="0.0" width="110" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="109.99" id="r0R-2g-MQ4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="AI assistant">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6e-Vl-lZh">
+                            <rect key="frame" x="330" y="0.0" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49.99" id="XdF-x7-000"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="kuaijiedengluLoginbg"/>
+                            <connections>
+                                <action selector="vipCenter:" destination="0Od-5t-TWw" eventType="touchUpInside" id="1LA-Tl-P51"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="c6e-Vl-lZh" firstAttribute="top" secondItem="5k7-8m-g86" secondAttribute="top" id="HCi-xY-Ob4"/>
+                        <constraint firstAttribute="bottom" secondItem="v36-61-lsm" secondAttribute="bottom" id="Z1e-03-54J"/>
+                        <constraint firstAttribute="bottom" secondItem="c6e-Vl-lZh" secondAttribute="bottom" id="GnO-fI-Ve9"/>
+                        <constraint firstAttribute="height" constant="43.99" id="yJF-AF-eBW"/>
+                        <constraint firstAttribute="trailing" secondItem="c6e-Vl-lZh" secondAttribute="trailing" constant="9.98" id="bc5-mf-WDo"/>
+                        <constraint firstItem="v36-61-lsm" firstAttribute="top" secondItem="5k7-8m-g86" secondAttribute="top" id="7ik-p3-BVs"/>
+                        <constraint firstItem="v36-61-lsm" firstAttribute="leading" secondItem="5k7-8m-g86" secondAttribute="leading" constant="16.01" id="h4i-40-ZJS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v2S-as-51m">
+                    <rect key="frame" x="0.0" y="91" width="390" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50.02" id="oED-mK-OUQ"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6t4-Hg-A7W">
+                    <rect key="frame" x="0.0" y="141" width="390" height="669"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bod-mx-kjr">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIt-yI-ZpV">
+                    <rect key="frame" x="308" y="727" width="66" height="66"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="shareScreenPhone"/>
+                    <connections>
+                        <action selector="newAdd:" destination="0Od-5t-TWw" eventType="touchUpInside" id="2YD-HA-6WX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ujL-SU-Lft"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ujL-SU-Lft" firstAttribute="trailing" secondItem="lIt-yI-ZpV" secondAttribute="trailing" constant="15.97" id="nvB-i0-LAU"/>
+                <constraint firstItem="6t4-Hg-A7W" firstAttribute="leading" secondItem="ujL-SU-Lft" secondAttribute="leading" id="gX6-K6-Hga"/>
+                <constraint firstItem="v2S-as-51m" firstAttribute="leading" secondItem="EzF-Ph-EFt" secondAttribute="leading" id="eg0-HF-dqM"/>
+                <constraint firstAttribute="trailing" secondItem="5k7-8m-g86" secondAttribute="trailing" id="P9s-Ts-9H4"/>
+                <constraint firstItem="5k7-8m-g86" firstAttribute="top" secondItem="ujL-SU-Lft" secondAttribute="top" id="jXk-ws-DZn"/>
+                <constraint firstItem="H3z-mu-321" firstAttribute="top" secondItem="EzF-Ph-EFt" secondAttribute="top" id="qyO-J4-0X5"/>
+                <constraint firstItem="H3z-mu-321" firstAttribute="leading" secondItem="EzF-Ph-EFt" secondAttribute="leading" id="9Ud-Vo-0cH"/>
+                <constraint firstItem="ujL-SU-Lft" firstAttribute="bottom" secondItem="6t4-Hg-A7W" secondAttribute="bottom" id="WYi-d2-Nyc"/>
+                <constraint firstItem="ujL-SU-Lft" firstAttribute="bottom" secondItem="lIt-yI-ZpV" secondAttribute="bottom" constant="16.99" id="KRW-d0-5QJ"/>
+                <constraint firstItem="6t4-Hg-A7W" firstAttribute="top" secondItem="v2S-as-51m" secondAttribute="bottom" id="pol-Nx-iJt"/>
+                <constraint firstItem="ujL-SU-Lft" firstAttribute="trailing" secondItem="v2S-as-51m" secondAttribute="trailing" id="BOO-Qa-c2k"/>
+                <constraint firstAttribute="bottom" secondItem="H3z-mu-321" secondAttribute="bottom" id="ukU-Gu-TYh"/>
+                <constraint firstAttribute="trailing" secondItem="6t4-Hg-A7W" secondAttribute="trailing" id="d1x-hc-jNy"/>
+                <constraint firstItem="v2S-as-51m" firstAttribute="top" secondItem="5k7-8m-g86" secondAttribute="bottom" id="fYc-2z-BVN"/>
+                <constraint firstAttribute="trailing" secondItem="H3z-mu-321" secondAttribute="trailing" id="G90-yo-SSI"/>
+                <constraint firstItem="5k7-8m-g86" firstAttribute="leading" secondItem="ujL-SU-Lft" secondAttribute="leading" id="rVi-sM-pe7"/>
+            </constraints>
+            <point key="canvasLocation" x="104.61538461538461" y="-14.218009478672984"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="settingShowItemun" width="390" height="844"/>
+        <image name="kuaijiedengluLoginbg" width="22" height="22"/>
+        <image name="shareScreenPhone" width="66" height="66"/>
+    </resources>
+</document>

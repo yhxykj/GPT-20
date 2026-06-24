@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="G6b-1z-fGg" customClass="CURecordsChuangCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G6b-1z-fGg" id="Dlb-ZO-2tJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-Ap-YiV">
+                        <rect key="frame" x="187" y="12" width="78" height="44"/>
+                        <color key="backgroundColor" red="0.61960784313725492" green="0.31372549019607843" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-dA-SPK">
+                        <rect key="frame" x="208" y="25" width="36" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tianjiatupianBottom" translatesAutoresizingMaskIntoConstraints="NO" id="T91-a0-8oP">
+                        <rect key="frame" x="270" y="19" width="34" height="34"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Daa-Ap-YiV" firstAttribute="leading" secondItem="h0Z-dA-SPK" secondAttribute="leading" constant="-21" id="KPm-zU-kXz"/>
+                    <constraint firstItem="h0Z-dA-SPK" firstAttribute="top" secondItem="Dlb-ZO-2tJ" secondAttribute="top" constant="25.04" id="FlL-KB-pRL"/>
+                    <constraint firstItem="h0Z-dA-SPK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dlb-ZO-2tJ" secondAttribute="leading" constant="55.03" id="4rd-Ve-5eS"/>
+                    <constraint firstAttribute="trailing" secondItem="h0Z-dA-SPK" secondAttribute="trailing" constant="75.97" id="7SX-20-dfA"/>
+                    <constraint firstAttribute="trailing" secondItem="T91-a0-8oP" secondAttribute="trailing" constant="16.02" id="jFp-Sz-dlf"/>
+                    <constraint firstAttribute="bottom" secondItem="h0Z-dA-SPK" secondAttribute="bottom" constant="24.99" id="bSc-qv-2Te"/>
+                    <constraint firstAttribute="bottom" secondItem="Daa-Ap-YiV" secondAttribute="bottom" constant="12.02" id="vgG-TP-wPQ"/>
+                    <constraint firstItem="T91-a0-8oP" firstAttribute="top" secondItem="Dlb-ZO-2tJ" secondAttribute="top" constant="18.98" id="lnF-b3-nPm"/>
+                    <constraint firstAttribute="trailing" secondItem="Daa-Ap-YiV" secondAttribute="trailing" constant="54.98" id="Q9C-Bf-2zY"/>
+                    <constraint firstItem="Daa-Ap-YiV" firstAttribute="top" secondItem="Dlb-ZO-2tJ" secondAttribute="top" constant="12.02" id="XXI-fK-SAi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="pkM-Ik-njF"/>
+            <connections>
+                <outlet property="meQlabel" destination="h0Z-dA-SPK" id="Kkd-E9-DdH"/>
+            </connections>
+            <point key="canvasLocation" x="207.69230769230768" y="-11.374407582938389"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tianjiatupianBottom" width="34" height="34"/>
+    </resources>
+</document>

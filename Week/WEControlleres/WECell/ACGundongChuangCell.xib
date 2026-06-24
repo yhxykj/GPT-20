@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="78" id="G6b-1z-fGg" customClass="ACGundongChuangCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="G6b-1z-fGg" id="Dlb-ZO-2tJ">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="78"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9X-hA-ik3">
+                        <rect key="frame" x="16" y="4" width="336" height="68"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maincell4" translatesAutoresizingMaskIntoConstraints="NO" id="wIU-ND-fOF">
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="68"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮我给我的女友写一封情书，表达爱意的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaD-gj-ajk">
+                                <rect key="frame" x="16" y="25" width="304" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wIU-ND-fOF" secondAttribute="trailing" id="XAM-jS-phK"/>
+                            <constraint firstItem="LaD-gj-ajk" firstAttribute="leading" secondItem="q9X-hA-ik3" secondAttribute="leading" constant="15.97" id="nAI-DV-2Ln"/>
+                            <constraint firstItem="wIU-ND-fOF" firstAttribute="top" secondItem="q9X-hA-ik3" secondAttribute="top" id="B6I-Gr-GZg"/>
+                            <constraint firstAttribute="height" constant="67.98" id="0KW-OS-3BO"/>
+                            <constraint firstAttribute="bottom" secondItem="wIU-ND-fOF" secondAttribute="bottom" id="rii-yR-w8R"/>
+                            <constraint firstItem="LaD-gj-ajk" firstAttribute="centerY" secondItem="q9X-hA-ik3" secondAttribute="centerY" id="kWt-0a-GFg"/>
+                            <constraint firstItem="wIU-ND-fOF" firstAttribute="leading" secondItem="q9X-hA-ik3" secondAttribute="leading" id="Pkm-zx-LVq"/>
+                            <constraint firstAttribute="trailing" secondItem="LaD-gj-ajk" secondAttribute="trailing" constant="15.99" id="puw-jM-TVv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q9X-hA-ik3" firstAttribute="leading" secondItem="Dlb-ZO-2tJ" secondAttribute="leading" constant="16.02" id="JbJ-1j-ohb"/>
+                    <constraint firstAttribute="trailing" secondItem="q9X-hA-ik3" secondAttribute="trailing" constant="15.97" id="ip4-1H-74T"/>
+                    <constraint firstAttribute="bottom" secondItem="q9X-hA-ik3" secondAttribute="bottom" constant="3.99" id="19m-x1-jd4"/>
+                    <constraint firstItem="q9X-hA-ik3" firstAttribute="top" secondItem="Dlb-ZO-2tJ" secondAttribute="top" constant="3.99" id="5DX-Ox-Gvm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="pkM-Ik-njF"/>
+            <connections>
+                <outlet property="label" destination="LaD-gj-ajk" id="LD6-6n-yYX"/>
+            </connections>
+            <point key="canvasLocation" x="166.41221374045801" y="-0.70422535211267612"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="maincell4" width="358" height="68"/>
+    </resources>
+</document>
