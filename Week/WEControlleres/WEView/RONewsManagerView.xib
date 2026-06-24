@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nkT-Pv-bPG" customClass="RONewsManagerView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dYB-Ma-L1r">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HxL-XZ-BoX">
+                    <rect key="frame" x="42" y="257" width="306" height="290"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settingLoginClass_t" translatesAutoresizingMaskIntoConstraints="NO" id="upc-gl-Udg">
+                            <rect key="frame" x="7" y="0.0" width="292" height="290"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfD-Uu-zUo">
+                            <rect key="frame" x="30" y="208" width="246" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="246.02" id="6Ms-Oh-YH9"/>
+                                <constraint firstAttribute="height" constant="58.98" id="nqr-cA-Uqf"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="upgrades:" destination="nkT-Pv-bPG" eventType="touchUpInside" id="7Xy-AO-Q5g"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="289.99" id="Cd7-Kj-Dnf"/>
+                        <constraint firstItem="upc-gl-Udg" firstAttribute="top" secondItem="HxL-XZ-BoX" secondAttribute="top" id="a1m-tx-4C0"/>
+                        <constraint firstItem="mfD-Uu-zUo" firstAttribute="centerX" secondItem="HxL-XZ-BoX" secondAttribute="centerX" id="1JJ-pI-aLc"/>
+                        <constraint firstAttribute="bottom" secondItem="mfD-Uu-zUo" secondAttribute="bottom" constant="23.02" id="3l7-W6-zm1"/>
+                        <constraint firstItem="upc-gl-Udg" firstAttribute="centerX" secondItem="HxL-XZ-BoX" secondAttribute="centerX" id="HcH-Fd-fER"/>
+                        <constraint firstItem="upc-gl-Udg" firstAttribute="centerY" secondItem="HxL-XZ-BoX" secondAttribute="centerY" id="y6q-Kf-Tep"/>
+                        <constraint firstAttribute="width" constant="305.98" id="ewQ-l5-mLG"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPv-M4-Gui">
+                    <rect key="frame" x="173" y="557" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43.99" id="Rao-hM-liI"/>
+                        <constraint firstAttribute="height" constant="43.99" id="tRm-T7-uFN"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="newsShowSetting"/>
+                    <connections>
+                        <action selector="close:" destination="nkT-Pv-bPG" eventType="touchUpInside" id="JQn-9m-l8p"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Xjh-DF-Gcm"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dYB-Ma-L1r" secondAttribute="trailing" id="7ig-mP-K7t"/>
+                <constraint firstItem="dYB-Ma-L1r" firstAttribute="leading" secondItem="nkT-Pv-bPG" secondAttribute="leading" id="h5y-zC-oMB"/>
+                <constraint firstItem="aPv-M4-Gui" firstAttribute="top" secondItem="HxL-XZ-BoX" secondAttribute="bottom" constant="10.02" id="xzG-s9-e4s"/>
+                <constraint firstItem="HxL-XZ-BoX" firstAttribute="centerX" secondItem="nkT-Pv-bPG" secondAttribute="centerX" id="ew4-bL-58S"/>
+                <constraint firstItem="HxL-XZ-BoX" firstAttribute="centerY" secondItem="nkT-Pv-bPG" secondAttribute="centerY" constant="-20" id="zIW-gP-foq"/>
+                <constraint firstAttribute="bottom" secondItem="dYB-Ma-L1r" secondAttribute="bottom" id="w7k-vr-HZ1"/>
+                <constraint firstItem="aPv-M4-Gui" firstAttribute="centerX" secondItem="HxL-XZ-BoX" secondAttribute="centerX" id="J8P-kf-SMC"/>
+                <constraint firstItem="dYB-Ma-L1r" firstAttribute="top" secondItem="nkT-Pv-bPG" secondAttribute="top" id="qAs-qn-oY1"/>
+            </constraints>
+            <point key="canvasLocation" x="121.53846153846153" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="newsShowSetting" width="34" height="34"/>
+        <image name="settingLoginClass_t" width="292" height="326"/>
+    </resources>
+</document>

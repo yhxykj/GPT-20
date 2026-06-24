@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="X0X-RS-SHP" customClass="TAlamofireCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstRobotlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Yvu-g2-LZY">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-8A-Aw7">
+                        <rect key="frame" x="22" y="578" width="344" height="74"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="74.01" id="lCM-pV-vvH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="27"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="bK0-m9-OQW"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EBp-8A-Aw7" secondAttribute="trailing" constant="22.02" id="8TK-pl-HIG"/>
+                <constraint firstAttribute="bottom" secondItem="EBp-8A-Aw7" secondAttribute="bottom" constant="60.01" id="bt9-Ms-qGB"/>
+                <constraint firstItem="Yvu-g2-LZY" firstAttribute="top" secondItem="X0X-RS-SHP" secondAttribute="top" id="gTU-e0-r71"/>
+                <constraint firstItem="EBp-8A-Aw7" firstAttribute="centerX" secondItem="X0X-RS-SHP" secondAttribute="centerX" id="XyD-JZ-FTq"/>
+                <constraint firstItem="EBp-8A-Aw7" firstAttribute="leading" secondItem="X0X-RS-SHP" secondAttribute="leading" constant="21.99" id="YMY-XE-jZP"/>
+                <constraint firstAttribute="trailing" secondItem="Yvu-g2-LZY" secondAttribute="trailing" id="55a-Ht-XqW"/>
+                <constraint firstItem="Yvu-g2-LZY" firstAttribute="leading" secondItem="X0X-RS-SHP" secondAttribute="leading" id="ZV0-YC-gW6"/>
+                <constraint firstAttribute="bottom" secondItem="Yvu-g2-LZY" secondAttribute="bottom" id="v88-fN-TCo"/>
+            </constraints>
+            <size key="customSize" width="388" height="712"/>
+            <connections>
+                <outlet property="Icon" destination="Yvu-g2-LZY" id="BJt-vd-ibp"/>
+                <outlet property="button" destination="EBp-8A-Aw7" id="ntM-YV-vwY"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="36.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="firstRobotlogo" width="390" height="844"/>
+    </resources>
+</document>

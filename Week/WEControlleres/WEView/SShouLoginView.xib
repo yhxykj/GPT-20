@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="w4h-8E-5mX" customClass="SShouLoginView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="543"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shouBegintwoBegintwo" translatesAutoresizingMaskIntoConstraints="NO" id="1HU-C4-W8s">
+                    <rect key="frame" x="105.66666666666669" y="126" width="179" height="196"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O96-iF-XQf">
+                    <rect key="frame" x="105" y="352" width="180" height="48"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="editModelbgResponse"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1HU-C4-W8s" firstAttribute="top" secondItem="w4h-8E-5mX" secondAttribute="top" constant="125.99" id="kYp-Du-1V7"/>
+                <constraint firstItem="O96-iF-XQf" firstAttribute="top" secondItem="1HU-C4-W8s" secondAttribute="bottom" constant="29.95" id="WzE-Kk-w0H"/>
+                <constraint firstItem="1HU-C4-W8s" firstAttribute="centerX" secondItem="w4h-8E-5mX" secondAttribute="centerX" id="r3X-Sp-tlj"/>
+                <constraint firstItem="O96-iF-XQf" firstAttribute="centerX" secondItem="w4h-8E-5mX" secondAttribute="centerX" id="qUO-72-FOO"/>
+            </constraints>
+            <connections>
+                <outlet property="addBtn" destination="O96-iF-XQf" id="KhD-qk-3Za"/>
+            </connections>
+            <point key="canvasLocation" x="68.702290076335871" y="75.704225352112687"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="editModelbgResponse" width="180" height="48"/>
+        <image name="shouBegintwoBegintwo" width="179" height="196"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nkT-Pv-bPG" customClass="GBaseView" customModule="Week" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="661"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LZs-qQ-f45">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="661"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="tMs-aX-pMF" appends="YES" id="WOZ-cI-uFK"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYR-Qk-epm">
+                    <rect key="frame" x="0.0" y="201" width="393" height="460"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择风格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss6-BJ-Kmc">
+                            <rect key="frame" x="161.66666666666666" y="18" width="70" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19.989999999999998" id="vMZ-te-gz5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IFP-va-mLT">
+                            <rect key="frame" x="0.0" y="46" width="393" height="414"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="460.00999999999999" id="Cf5-CT-k9c"/>
+                        <constraint firstItem="Ss6-BJ-Kmc" firstAttribute="centerX" secondItem="QYR-Qk-epm" secondAttribute="centerX" id="NPE-jA-GWT"/>
+                        <constraint firstItem="IFP-va-mLT" firstAttribute="top" secondItem="Ss6-BJ-Kmc" secondAttribute="bottom" constant="7.9800000000000004" id="ds0-Hb-UV5"/>
+                        <constraint firstAttribute="bottom" secondItem="IFP-va-mLT" secondAttribute="bottom" id="njv-7D-pkd"/>
+                        <constraint firstAttribute="trailing" secondItem="IFP-va-mLT" secondAttribute="trailing" id="rCk-lL-kA4"/>
+                        <constraint firstItem="IFP-va-mLT" firstAttribute="leading" secondItem="QYR-Qk-epm" secondAttribute="leading" id="rN7-QY-a0o"/>
+                        <constraint firstItem="Ss6-BJ-Kmc" firstAttribute="top" secondItem="QYR-Qk-epm" secondAttribute="top" constant="17.989999999999998" id="rch-3I-ffs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="LZs-qQ-f45" firstAttribute="top" secondItem="nkT-Pv-bPG" secondAttribute="top" id="Ifg-3O-cwZ"/>
+                <constraint firstItem="LZs-qQ-f45" firstAttribute="leading" secondItem="nkT-Pv-bPG" secondAttribute="leading" id="WCt-wM-m1n"/>
+                <constraint firstAttribute="bottom" secondItem="QYR-Qk-epm" secondAttribute="bottom" id="jWB-k7-6mk"/>
+                <constraint firstAttribute="trailing" secondItem="LZs-qQ-f45" secondAttribute="trailing" id="lSa-vQ-nKG"/>
+                <constraint firstItem="QYR-Qk-epm" firstAttribute="leading" secondItem="nkT-Pv-bPG" secondAttribute="leading" id="nGa-0M-cvK"/>
+                <constraint firstAttribute="trailing" secondItem="QYR-Qk-epm" secondAttribute="trailing" id="qHV-hH-FJI"/>
+                <constraint firstAttribute="bottom" secondItem="LZs-qQ-f45" secondAttribute="bottom" id="vpq-nG-4YJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="IFP-va-mLT" id="V9V-JU-fYQ"/>
+            </connections>
+            <point key="canvasLocation" x="96.946564885496173" y="349.64788732394368"/>
+        </view>
+        <tapGestureRecognizer id="tMs-aX-pMF">
+            <connections>
+                <action selector="dissmiss:" destination="nkT-Pv-bPG" id="mv0-iu-Son"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

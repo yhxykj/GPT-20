@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="0Od-5t-TWw" userLabel="File's Owner" customClass="UNKRegisterController" customModule="Week" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="btN-gD-gcs" id="wzJ-fW-ADX"/>
+                <outlet property="button" destination="ZY5-1t-pbo" id="7xd-vW-ujm"/>
+                <outlet property="itemView" destination="gP0-WM-LVw" id="363-gW-SRK"/>
+                <outlet property="view" destination="EzF-Ph-EFt" id="qnO-gO-ETn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="bpA-NZ-pJf" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="EzF-Ph-EFt">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuaijielogin" translatesAutoresizingMaskIntoConstraints="NO" id="tWK-Mg-Ibe">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gP0-WM-LVw">
+                    <rect key="frame" x="0.0" y="461" width="393" height="391"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqb-e6-NmN">
+                            <rect key="frame" x="53.666666666666657" y="92" width="286" height="54"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="delete_6Screen"/>
+                            <connections>
+                                <action selector="_seekLogin:" destination="0Od-5t-TWw" eventType="touchUpInside" id="c5u-0Y-XMK"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lc1-5E-frw">
+                            <rect key="frame" x="16" y="172" width="361" height="54"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEK-H9-UkT">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="54"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="其他手机号登录">
+                                        <color key="titleColor" red="0.3529411764705882" green="0.35686274509803922" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="_phoneClick:" destination="0Od-5t-TWw" eventType="touchUpInside" id="Wfh-TY-zeT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="bEK-H9-UkT" secondAttribute="bottom" id="5Hb-7z-HR4"/>
+                                <constraint firstItem="bEK-H9-UkT" firstAttribute="top" secondItem="lc1-5E-frw" secondAttribute="top" id="6ye-k0-7cY"/>
+                                <constraint firstAttribute="height" constant="54.009999999999998" id="AO1-37-Nxb"/>
+                                <constraint firstAttribute="trailing" secondItem="bEK-H9-UkT" secondAttribute="trailing" id="AVK-5z-1yY"/>
+                                <constraint firstItem="bEK-H9-UkT" firstAttribute="leading" secondItem="lc1-5E-frw" secondAttribute="leading" id="jSz-qm-pG2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mqb-e6-NmN" firstAttribute="centerX" secondItem="gP0-WM-LVw" secondAttribute="centerX" id="IgG-g4-Aj2"/>
+                        <constraint firstAttribute="height" constant="391.00999999999999" id="Joy-1i-UWN"/>
+                        <constraint firstAttribute="trailing" secondItem="lc1-5E-frw" secondAttribute="trailing" constant="16.02" id="c6h-HX-bm1"/>
+                        <constraint firstItem="lc1-5E-frw" firstAttribute="top" secondItem="mqb-e6-NmN" secondAttribute="bottom" constant="25.98" id="iNr-WZ-iJU"/>
+                        <constraint firstAttribute="bottom" secondItem="lc1-5E-frw" secondAttribute="bottom" constant="165.03" id="kUd-Gv-dzO"/>
+                        <constraint firstItem="lc1-5E-frw" firstAttribute="leading" secondItem="gP0-WM-LVw" secondAttribute="leading" constant="15.98" id="pIf-3p-TnM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btN-gD-gcs">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kuaijielogin" translatesAutoresizingMaskIntoConstraints="NO" id="SgG-Mm-iw4">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY5-1t-pbo">
+                            <rect key="frame" x="53.666666666666657" y="655" width="286" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51.969999999999999" id="R96-YY-wgH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="phonelogin"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="26"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="_speedLogin:" destination="0Od-5t-TWw" eventType="touchUpInside" id="45r-U1-Aeb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SgG-Mm-iw4" secondAttribute="trailing" id="GaN-Tv-Qky"/>
+                        <constraint firstItem="ZY5-1t-pbo" firstAttribute="centerX" secondItem="btN-gD-gcs" secondAttribute="centerX" id="JOT-ND-XaD"/>
+                        <constraint firstItem="SgG-Mm-iw4" firstAttribute="top" secondItem="btN-gD-gcs" secondAttribute="top" id="YDM-qV-k57"/>
+                        <constraint firstItem="SgG-Mm-iw4" firstAttribute="centerX" secondItem="btN-gD-gcs" secondAttribute="centerX" id="c2E-YX-1r3"/>
+                        <constraint firstAttribute="bottom" secondItem="SgG-Mm-iw4" secondAttribute="bottom" id="lop-cA-O6S"/>
+                        <constraint firstAttribute="bottom" secondItem="ZY5-1t-pbo" secondAttribute="bottom" constant="144.97999999999999" id="q0O-B3-y7K"/>
+                        <constraint firstItem="SgG-Mm-iw4" firstAttribute="leading" secondItem="btN-gD-gcs" secondAttribute="leading" id="rgE-sh-qBP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ujL-SU-Lft"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tWK-Mg-Ibe" secondAttribute="bottom" id="0ha-W2-SPh"/>
+                <constraint firstAttribute="bottom" secondItem="btN-gD-gcs" secondAttribute="bottom" id="3LJ-Tf-05Q"/>
+                <constraint firstItem="tWK-Mg-Ibe" firstAttribute="top" secondItem="EzF-Ph-EFt" secondAttribute="top" id="73c-Dy-QSC"/>
+                <constraint firstItem="btN-gD-gcs" firstAttribute="top" secondItem="EzF-Ph-EFt" secondAttribute="top" id="A8l-U2-FMd"/>
+                <constraint firstItem="ujL-SU-Lft" firstAttribute="trailing" secondItem="btN-gD-gcs" secondAttribute="trailing" id="XWs-RJ-HQc"/>
+                <constraint firstItem="gP0-WM-LVw" firstAttribute="leading" secondItem="ujL-SU-Lft" secondAttribute="leading" id="f70-SJ-hQC"/>
+                <constraint firstItem="btN-gD-gcs" firstAttribute="trailing" secondItem="ujL-SU-Lft" secondAttribute="trailing" id="k27-ff-PdE"/>
+                <constraint firstItem="ujL-SU-Lft" firstAttribute="trailing" secondItem="tWK-Mg-Ibe" secondAttribute="trailing" id="kpL-iE-9wc"/>
+                <constraint firstItem="btN-gD-gcs" firstAttribute="top" secondItem="EzF-Ph-EFt" secondAttribute="top" id="m4w-lv-y5e"/>
+                <constraint firstAttribute="bottom" secondItem="gP0-WM-LVw" secondAttribute="bottom" id="o2M-BZ-Zva"/>
+                <constraint firstItem="ujL-SU-Lft" firstAttribute="trailing" secondItem="gP0-WM-LVw" secondAttribute="trailing" id="uQY-yb-7dk"/>
+                <constraint firstAttribute="bottom" secondItem="btN-gD-gcs" secondAttribute="bottom" id="vwq-7R-mkw"/>
+                <constraint firstItem="tWK-Mg-Ibe" firstAttribute="leading" secondItem="ujL-SU-Lft" secondAttribute="leading" id="wgR-Z9-tQp"/>
+                <constraint firstItem="btN-gD-gcs" firstAttribute="leading" secondItem="ujL-SU-Lft" secondAttribute="leading" id="zR9-gP-7Ra"/>
+                <constraint firstItem="btN-gD-gcs" firstAttribute="leading" secondItem="EzF-Ph-EFt" secondAttribute="leading" id="zUO-9I-EJ1"/>
+            </constraints>
+            <point key="canvasLocation" x="87.786259541984734" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_6Screen" width="286" height="54"/>
+        <image name="kuaijielogin" width="390" height="844"/>
+        <image name="phonelogin" width="286" height="54"/>
+    </resources>
+</document>
